@@ -1,3 +1,3 @@
 # Google Cloud Functions
 
-OTP Authentication with `Firebase`
+OTP Authentication with `Firebase CLI`
