@@ -1,7 +1,7 @@
 const admin = require('firebase-admin');
 const twilio = require('./twilio');
 
-module.exports = function(req, res) {
+module.exports = (req, res) => {
   if (!req.body.phone) {
     return res.status(422).send({ error: 'You must provide a phone number' });
   }
@@ -28,4 +28,4 @@ module.exports = function(req, res) {
     .catch((err) => {
       res.status(422).send({ error: err });
     });
-}
+};
